@@ -87,14 +87,29 @@ Directories
 
 **Getting started with docker**
 
-What is docker
-* Are like virtual machines, so 'micro computers' running on your computer
-    * Each their own operating system
-    * Each their own isolated CPU
-    * Dockers can be easily added, removed, stopped, and started without affecting host or other dockers
-* A docker has a VERY specific job. They DONT simulate the entire computer like virtual machines
+What is docker container
+* Containers are like virtual machines, so 'micro computers' running on your computer
+  * Each their own operating system
+  * Each their own isolated CPU
+  * Containers can be easily added, removed, stopped, and started without affecting host or other dockers
+
+* A container has a VERY specific job. They DONT simulate the entire computer like virtual machines
     * Jobs like running a MYSQL database or a NodeJS application
-* Dockers can be connected together
+
+* Containers can be connected together
+* IMPORTANT: What docker DOES is it's a way to build and run these containers and save them into templates
+
+
+
+What is docker image
+* Container image is a standardized package that includes all of the files, binaries, libraries, and configurations to run a container.
+* There are different container images, like:
+  * A PostgreSQL image. That image will package the database binaries, config files, and other dependencies.
+  * A Python web app image. That image will  include the Python runtime, your app code, and all of its dependencies.
+
+* TWO IMPORTANT principles 
+  * Images CANT be modified after it's created. Can only create new images or add changes ON TOP OF IT
+  * Containers images are composed of layers. For example when the image is being built, one layer installs ubuntu, the second layer python.. and so forth
 
 Benefits
 * software on docker container can be deployed to any machine without compatibility issues
@@ -104,7 +119,7 @@ Benefits
 
 Source:[TechSquidTV](https://www.youtube.com/watch?v=_dfLOzuIg2o&t=18s)
 Source:[Reddit](https://www.reddit.com/r/docker/comments/keq9el/please_someone_explain_docker_to_me_like_i_am_an/)
-
+Source:[dockerdocs]https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-an-image/
 
 
 * Docker File and compose
