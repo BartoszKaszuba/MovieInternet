@@ -57,6 +57,16 @@ We would like to bring everybody in the team up to speed and set in stone in wha
   Sources:
   [CodeOps Show: GIT: Working with Branches](https://www.youtube.com/watch?v=JTE2Fn_sCZs)
 
+![alt text](image.png)  
+Source:[ByteByteGo video](https://www.youtube.com/watch?v=e9lnsKot_SQ)
+
+Directories
+* Working directory
+- Git clone
+* Staging area
+* Local Repository
+* Remote repository
+
   prompts chat GPT 
   ---
 
@@ -70,20 +80,32 @@ We would like to bring everybody in the team up to speed and set in stone in wha
 
 
 
-
-![alt text](image.png)
-Source:[ByteByteGo video](https://www.youtube.com/watch?v=e9lnsKot_SQ)
-
-Directories
-* Working directory
-- Git clone
-* Staging area
-* Local Repository
-* Remote repository
+**Setting up dual-boot windows/linux**
+Prep
+* Back up your systems
+* Download an ISO file for the linux distro
+* Flash the USB with the ISO file (you can use Rufur or etcher)
 
 
+**How to set up dual-boot?**
 
-**Setting up dualboot windows/linux**
+Restart you system and while in boot click on F12 for Boot menu. than select your flashed usb as boot device. Than you will be able to choose install "insert linux distro" on the desktop. When you click it you will go through the installation options (adjust accordingly). After the first couple screens a installation type heading will show up. You should choose to install your linux alongside your windows boot manager. After that you will be able to choose how much space you would like to dedicate to the project (we will be going with 250 GB). Write your changes and go on with the installation. Now when you restart you will be able to choose to either boot windows o linux.
+
+Tips:
+* If F12 does not work just google the model of your computer.
+sources:  
+[ExplainingComputers: Windows & Linux: Dual Drive Dual Boot](https://www.youtube.com/watch?v=KWVte9WGxGE)
+
+***Backing up you system***
+
+* Drive clone
+* External drive reader + Extra drive + Clonezilla
+* Cloud - limited use
+* Carbonite - limited use (very safe)
+Free options
+* Fbackup - You just need an extarnal storage unit (Can schedule backup)
+
+[Ask Your Computer Guy: How to clone a hard drive - EASY step by step walk-thru!](https://www.youtube.com/watch?v=-89EcTjzl4M&t=832s)  
 
 **Getting started with docker**
 
