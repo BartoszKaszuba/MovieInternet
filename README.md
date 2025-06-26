@@ -122,5 +122,14 @@ Source:[Reddit](https://www.reddit.com/r/docker/comments/keq9el/please_someone_e
 Source:[dockerdocs]https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-an-image/
 
 
-* Docker File and compose
+  **Docker File and compose**
   
+* Dockerfile - A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.
+    * A Dockerfile is a simple text file that contains the commands a user could call to assemble an image.
+* Docker compose - Docker Compose is a tool for defining and running multi-container Docker applications. It is the key to unlocking a streamlined and efficient development and deployment experience.
+    * s
+
+
+  ![alt text](image-1.png)
+  [Medium: Getting Started with Docker: Facts You Should Know](https://itnext.io/getting-started-with-docker-facts-you-should-know-d000e5815598)  
+[DockerDocs: Dockerfile referance](https://docs.docker.com/reference/dockerfile/#:~:text=A%20Dockerfile%20is%20a%20text,line%20to%20assemble%20an%20image.)
