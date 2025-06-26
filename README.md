@@ -98,5 +98,15 @@ Tips:
 sources:  
 [ExplainingComputers: Windows & Linux: Dual Drive Dual Boot](https://www.youtube.com/watch?v=KWVte9WGxGE)
 
+***Backing up you system***
+
+* Drive clone
+* External drive reader + Extra drive + Clonezilla
+* Cloud - limited use
+* Carbonite - limited use (very safe)
+Free options
+* Fbackup - You just need an extarnal storage unit (Can schedule backup)
+
+[Ask Your Computer Guy: How to clone a hard drive - EASY step by step walk-thru!](https://www.youtube.com/watch?v=-89EcTjzl4M&t=832s)
 **Getting started with docker**
 
