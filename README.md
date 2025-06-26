@@ -80,16 +80,14 @@ Directories
 
 
 
-**Setting up dualboot windows/linux**
+**Setting up dual-boot windows/linux**
 Prep
 * Back up your systems
 * Download an ISO file for the linux distro
 * Flash the USB with the ISO file (you can use Rufur or etcher)
-* 
 
 
-
-Do's
+**How to set up dual-boot?**
 
 Restart you system and while in boot click on F12 for Boot menu. than select your flashed usb as boot device. Than you will be able to choose install "insert linux distro" on the desktop. When you click it you will go through the installation options (adjust accordingly). After the first couple screens a installation type heading will show up. You should choose to install your linux alongside your windows boot manager. After that you will be able to choose how much space you would like to dedicate to the project (we will be going with 250 GB). Write your changes and go on with the installation. Now when you restart you will be able to choose to either boot windows o linux.
 
@@ -107,6 +105,7 @@ sources:
 Free options
 * Fbackup - You just need an extarnal storage unit (Can schedule backup)
 
-[Ask Your Computer Guy: How to clone a hard drive - EASY step by step walk-thru!](https://www.youtube.com/watch?v=-89EcTjzl4M&t=832s)
+[Ask Your Computer Guy: How to clone a hard drive - EASY step by step walk-thru!](https://www.youtube.com/watch?v=-89EcTjzl4M&t=832s)  
+
 **Getting started with docker**
 
