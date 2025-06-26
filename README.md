@@ -87,3 +87,20 @@ Directories
 
 **Getting started with docker**
 
+What is docker
+* Are like virtual machines, so 'micro computers' running on your computer
+    * Each their own operating system
+    * Each their own isolated CPU
+    * Dockers can be easily added, removed, stopped, and started without affecting host or other dockers
+* A docker has a VERY specific job. They DONT simulate the entire computer like virtual machines
+    * Jobs like running a MYSQL database or a NodeJS application
+* Dockers can be connected together
+
+Benefits
+* software on docker container can be deployed to any machine without compatibility issues
+  * Simpler to use
+  * Less work to develop
+  * Less work to maintain
+
+Source:[TechSquidTV](https://www.youtube.com/watch?v=_dfLOzuIg2o&t=18s)
+Source:[Reddit](https://www.reddit.com/r/docker/comments/keq9el/please_someone_explain_docker_to_me_like_i_am_an/)
