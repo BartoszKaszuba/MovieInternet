@@ -34,6 +34,7 @@ We would like to bring everybody in the team up to speed and set in stone in wha
 
 
 
+
 *   When to pull
     * Fetch origin - Fetching code from the remote repository
     * Merge - Combining changes from different files
