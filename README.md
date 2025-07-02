@@ -84,16 +84,48 @@ Directories
 **Setting up dual-boot windows/linux**
 Prep
 * Back up your systems
+* DECRYPT YOUR WINDOWS INSTALLATION if it is encrypted. Failing to do this will result in you being unable to access your computer
 * Download an ISO file for the linux distro
-* Flash the USB with the ISO file (you can use Rufur or etcher)
+* Flash the USB with the ISO file (you can use Rufur or etcher.)
+  * Note: You could also install ventoy on your USB. This makes it possible to choose from multible ISO's
+* Disable secure boot in your bios(can be accessed when booting up computer) This will disable defaulting to windows during bootup
 
 
 **How to set up dual-boot?**
 
 Restart you system and while in boot click on F12 for Boot menu. than select your flashed usb as boot device. Than you will be able to choose install "insert linux distro" on the desktop. When you click it you will go through the installation options (adjust accordingly). After the first couple screens a installation type heading will show up. You should choose to install your linux alongside your windows boot manager. After that you will be able to choose how much space you would like to dedicate to the project (we will be going with 250 GB). Write your changes and go on with the installation. Now when you restart you will be able to choose to either boot windows o linux.
 
-Tips:
-* If F12 does not work just google the model of your computer.
+Encountered issues with fixes:
+* Issues with entering boot menu
+  * F12 not working to enter boot-menu: Your computer model might have a different key for entering the boot-menu. Search the right key of your model(lenovo.. dell.. hp..)
+  * Not being able to enter boot-menu despite pressing the right key: The 'fast startup' configuration makes the computer boot up quickly, which might cause the boot-menu to be impossible to enter. To disable fast-startup head over to Control Panel, then Power Options, and choose "Choose what the power buttons do." Click "Change settings that are currently unavailable," and then uncheck "Turn on fast startup" under Shutdown settings. You will now have a sufficient window to open the boot-menu
+* Issues with installation
+  * Installation abrubtly ending: If you chose the 'Try or install (YOUR_OS)' option, there might be an issue where the installation proces will abruptly end. This can be observed when the installation window shuts off without notification. To stop this from happening, pick the 'safe graphics mode' option instead of the 'Try or install (YOUR_OS)' option. WARNING: If this happened, fix your corrupted drivers first before attempting a new installation.
+  * Fixing corrupted drivers: If the installation was interrupted there is a high change that your newly created linux partition became unusable. To fix this go to 'create and format hard disk partitions' and select the corrupted partition and delete it. After this the deleted partition will become unallocated memory. Merge this allocated memory with your existing windows partition(basically restoring it to original). After this you can safely attempt an installation of linux again.
+* Issues with choosing operating system
+  * Menu with operating systems not showing during bootup: This issue could be caused by the boot being in the wrong order. To fix this, enter your BIOS during bootup, head over to 'startup' and place your new OS, in our case ubuntu, in first place. This makes sure that the menu will be shown during bootup
+
+**How to secure and encrypt your new system**
+1. Enabling secure boot
+If you enable secure boot after installing linux you won't be able to access it. To fix this, you'll need to create a Machine Owner Key(MOK) for linux.  This can be done by entering the following commands in the linux terminal. First run these:
+
+sudo -i
+update-secureboot-policy --new-key
+
+And then run this command to enroll the key:
+mokutil --import /var/lib/shim-signed/mok/MOK.der
+
+Now you will need to reboot the system and a blue screen will appear which is the MOK manager. Choose 'Enroll MOK', then choose continue, then enter your password which you created during the key creation process. The system will now reboot again. Make sure to enable third party authentication in your BIOS configuration. After these steps secure boot will work properly with the dual-boot system.
+
+
+2. Encrypting linux and windows
+After enabling secure boot, you'll be able to encrypt both your linux and windows drive without complications. For windows 10 and higher you could use the built-in bitlocker. For linux encryption refer to this source: https://www.howtogeek.com/116032/how-to-encrypt-your-home-folder-after-installing-ubuntu/
+
+
+
+
+
+
 sources:  
 [ExplainingComputers: Windows & Linux: Dual Drive Dual Boot](https://www.youtube.com/watch?v=KWVte9WGxGE)
 
