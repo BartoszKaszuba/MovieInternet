@@ -226,3 +226,7 @@ https://medium.com/nerd-for-tech/understanding-the-key-files-in-a-react-app-1729
 ### implementing vite
 
 https://vite.dev/guide/
+
+[css in 5 minutes](https://www.youtube.com/watch?v=Z4pCqK-V_Wo)
+
+[MUI documentation](https://mui.com/material-ui/react-stack/)
