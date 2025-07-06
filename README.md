@@ -159,3 +159,70 @@ Benefits
 
 Source:[TechSquidTV](https://www.youtube.com/watch?v=_dfLOzuIg2o&t=18s)
 Source:[Reddit](https://www.reddit.com/r/docker/comments/keq9el/please_someone_explain_docker_to_me_like_i_am_an/)
+
+
+
+
+# Development setup Bartosz
+
+## Setting up dual boot 
+
+Dual boot seems pretty straight forward. Although I managed to run into problems that may seem relevent to you. 
+
+* partitioning problems
+While in the Disk management window, I tried to partition my C: drive while I had 400 GB of free storage on my drive. When I used the "shrink drive" function I expected to have this exact amount of space to shrink. but it was not the case. I had 700 MB. I asked my self "WHY!!" and proptly started debugging the issue. From the info I've gathered I can conclude that it was the issue of the imovable files like pagefiles,hiberfile, swapfile, and others. Earesing all of them proved to be a too difficult task so I decided to use third party tool for resizing my drive - MiniTool Partition Wizard Worked like magic. Now with a resized drive I just flashed a 8 GB USB stick with latest version of Ubuntu using "Balena Etcher" which also did the job. Then I went to Advanced Statup Options screen, by restarting and pressing shift simutaniously. To get acces to the use a device button. after that I stuck my USB into my machine and choose it on the current screen. After that I went through the Ubuntu setup and installation. After installation was done. My computer booted up to windows, to resolve this issue I went to my BIOs and choose for the linux to boot up as the first.
+
+and my ubuntu was ready
+
+resources I used throughout implementation fase
+[Robtech: How to Dual Boot Windows 11 & Ubuntu Easily](https://www.youtube.com/watch?v=mXyN1aJYefc)
+
+## Installing visual studio code
+
+this tutorial helped me a lot
+[ProgrammingKnowledge: How to Install and Use Visual Studio Code on Ubuntu 22.04 LTS Linux (VS Code)](https://www.youtube.com/watch?v=ChwsFldra-o&t=201s)
+
+## Installing GithubKraken
+
+Here I used the same logic that Programming Knowledge used in the VS code tutorial wiht dpkg command
+
+## Installing Docker
+
+[Docker: Products/DockerDesktop/Setup/Install/Linux/Ubuntu](https://docs.docker.com/desktop/setup/install/linux/ubuntu/)
+
+this thread was very helpfull to troubleshoot after following the steps on docker web site
+[](https://askubuntu.com/questions/1409192/cannot-install-docker-desktop-on-ubuntu-22-04)
+
+# Learning Development setup
+
+## docker
+
+
+## Gitkraken
+https://help.gitkraken.com/gitkraken-desktop/interface/
+
+
+
+## coding react
+ 
+ sudo apt-get install ca-certificates curl gnupg lsb-release
+
+sudo mkdir -p /etc/apt/keyrings
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+
+
+NPM
+basic program
+npx create-reaact-app my-first-app --template typescript
+
+[understanding the key files in a react app](
+https://medium.com/nerd-for-tech/understanding-the-key-files-in-a-react-app-1729391ce88b)
+
+### implementing vite
+
+https://vite.dev/guide/
