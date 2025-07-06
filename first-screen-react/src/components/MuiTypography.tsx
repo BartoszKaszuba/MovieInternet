@@ -5,7 +5,7 @@ import { Typography } from '@mui/material';
 
 export const MuiTypography = () => {
   return (
-    <div><Typography variant = 'h1'> Welcome back</Typography></div>
+    <div><Typography variant = 'h3'> Welcome back</Typography></div>
   );
 }
 
